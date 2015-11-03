@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "URL Splitter";
+}
+
+<div class="jumbotron">
+    <span>Split Query String and store in DB    </span>
+    <ul>
+        <li>@ViewBag.ControllerMessage</li>
+    </ul>
+</div>
+
+<div>
+@using (Html.BeginForm("Index", "Home"))
+{
+    <lable>Tag Name for this URL:</lable><input id="txtTagName" name="txtTagName" size="20" value=@ViewBag.TagName/>
+    <br/>
+    <hr />
+    <br />
+    <lable>URL:</lable><input id="txtUrl" name="txtUrl" size="100" />
+    <input type="submit" id="btnEnterURL" value="Enter" />
+}
+</div>
